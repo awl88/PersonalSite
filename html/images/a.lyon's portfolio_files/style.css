@@ -1,0 +1,246 @@
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/header2.jpg");
+  /* Set a specific height */
+  height: 810px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-text {
+  margin-top: 150px;
+  padding: 15px 50px;
+  border-left: solid 5px blue;
+  height: 250px;
+  margin-left: 30px;
+  padding-left: 20px;
+}
+
+.parallax h1 {
+  font-size: 40pt;
+  color: lightgrey;
+}
+
+.parallax h2 {
+  position: relative;
+  font-size: 20pt;
+  color: lightgrey;
+}
+
+.parallax h3 {
+  position: relative;
+  font-size: 12pt;
+  color: lightgrey;
+  /*padding-top: 200px;*/
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: black;
+  z-index: 99 !important;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: black;
+}
+
+#navbar a:hover {}
+
+#navbar a.active {
+  color: white;
+  border-bottom: 1px solid white;
+  background-color: black;
+}
+
+.navbarbor {
+  overflow: hidden;
+  border-bottom: 1px solid darkgrey;
+  background-color: black;
+}
+
+.navnojump {
+  height: 54px;
+  border-bottom: 1px solid lightgrey;
+  background-color: black;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky+.content {
+  padding-top: 60px;
+}
+
+.aboutClass {
+  background-color: black;
+  height: 100%;
+  padding-right: 10em;
+  padding-bottom: 3em;
+  font-size: 14pt;
+  color: white;
+}
+
+.projectsClass {
+  background-color: #444;
+  height: 100%;
+  font-size: 14pt;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+}
+
+.center-font {
+  text-align: center;
+}
+
+    <style type="text/css">
+       a:link {color: black;}      /* unvisited link */
+       a:visited {color: black;}   /* visited link */
+       a:hover {color: black;}     /* mouse over link */
+       a:active {color: black ;}    /* selected link */
+    </style>
+
+
+.resumeClass {
+  background-color: black;
+  height: 100%;
+  font-size: 20pt;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+}
+
+.contactClass {
+  background-color: white;
+  height: 100%;
+  font-size: 14pt;
+  color: black;
+  padding-bottom: 30px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hold {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.hold:hover .image {
+  opacity: 0.3;
+}
+
+.hold:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #grey;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 16px 32px;
+}
+
+
+/* skillbar */
+.skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.skillbar-bar:before {
+    background: black;
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.skillbar-bar {
+    height: 3px;
+    width: 0px;
+    background: #323232;
+    transition-property: width; background-color: lightgrey;-moz-transform: scale(-1, 1);
+}
+
+.skillbar-title {
+    color: #white;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.skill-bar-percent {
+    float: right;
+    display: inline-block;
+    color: #white;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}

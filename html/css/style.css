@@ -1,0 +1,509 @@
+/* *
+==================================================
+|| Andrew Lyon Portfolio Stylesheet             ||
+|| andrew-lyon.com                              ||
+|| 05-24-2018                                   ||
+==================================================
+
+TOC
+a. General Styles
+b. Parallax
+c. Navigation
+d. About Section
+e. Resume Section
+f. Projects Section
+g. Contact Section
+
+==================================================*/
+
+
+/* a. General Styles
+   ================================================== */
+img {
+  max-width: 100%;
+}
+
+body {
+  color: white;
+}
+
+/* b. Parallax
+   ================================================== */
+.parallax {
+  background-image: url("../images/header2.jpg");
+  height: 810px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax h1 {
+  font: 40pt 'Open Sans', sans-serif;
+  color: white;
+}
+
+.parallax-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* c. Navigation
+   ================================================== */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+  font: 12px 'Open Sans', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.opaque { background-color: #333; }
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+  text-align: center;
+}
+
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+
+ul#nav li a {
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+
+ -webkit-transition: color .5s ease-in-out;
+ -moz-transition: color .5s ease-in-out;
+ -o-transition: color .5s ease-in-out;
+ -ms-transition: color .5s ease-in-out;
+ transition: color .5s ease-in-out;
+}
+
+ul#nav a.active { 
+  background-color: transparent !important; 
+  color: orange;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+
+/* d. About Section
+   ================================================== */
+#about {
+  background-color: #2B2B2B;
+  padding-top: 86px;
+  padding-bottom: 66px;
+  font: 14px 'Open Sans', sans-serif;
+  color: white;
+}
+
+#about .download {
+  padding-top: 30px;
+  color: black;
+}
+
+#about .address {
+  font-size: 12px;
+}
+
+/* e. Resume Section
+   ================================================== */
+#resume {
+  background-color: #fff;
+  font-size: 20pt;
+  color: rgb(87, 87, 87);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 86px;
+  padding-bottom: 66px;
+}
+
+#resume .subject h1{
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 12pt;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+#resume .education h1{
+  font-size: 13pt;
+  font-weight: bold;
+  margin-top: -8px;
+}
+
+#resume .info {
+  font: 14px 'librebaskerville-italic';
+  color: rgb(87, 87, 87);
+  font-style: italic;
+  margin-bottom: -16px;
+  margin-top: -10px;
+}
+
+#resume .date, .location{
+  font: 12px 'Open Sans', sans-serif;
+  font-style: initial;
+  color: rgb(119, 126, 129);
+}
+
+#resume p {
+  font: 12px 'Open Sans', sans-serif;
+  font-style: initial;
+  color: rgb(119, 126, 129);
+}
+
+/* <<<<<<< Skillbar >>>>>>> */
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background:#eee;
+  height:35px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+  font: 12px 'Open Sans', sans-serif;
+  color:#fff;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background: black;
+  padding:0 20px;
+  height:35px;
+  line-height:35px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height:35px;
+  width:0px;
+  background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  float: left;
+}
+
+.containers {
+  min-height: 100%;
+  height: 100vh;
+}
+
+.v-padding {
+  padding-top: 5%;
+}
+
+/* f. Projects Section
+   ================================================== */
+#projects {
+  height: 100%;
+  font-size: 14pt;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  padding-bottom: 3em;
+}
+
+#projects h1 {
+  color: #000;
+  font: 32px 'Open Sans', sans-serif;
+  padding-bottom: 1em;
+}
+
+/* <<<<<<< projects >>>>>>> */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.project {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
+}
+
+figure.project *,
+figure.project *:before,
+figure.project *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.55s ease;
+  transition: all 0.55s ease;
+}
+
+figure.project img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+  opacity: 0.9;
+}
+
+figure.project .title {
+  position: absolute;
+  top: 58%;
+  left: 25px;
+  padding: 5px 10px 10px;
+}
+
+figure.project .title:before,
+figure.project .title:after {
+  height: 2px;
+  width: 400px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+
+figure.project .title:before {
+  top: 0;
+  left: 10px;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+figure.project .title:after {
+  bottom: 0;
+  right: 10px;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+figure.project .title div:before,
+figure.project .title div:after {
+  width: 2px;
+  height: 300px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+
+figure.project .title div:before {
+  top: 10px;
+  right: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+figure.project .title div:after {
+  bottom: 10px;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+figure.project h2,
+figure.project h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+figure.project h2 {
+  font-weight: 400;
+}
+
+figure.project h4 {
+  display: block;
+  font-weight: 700;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  color: #000000;
+}
+
+figure.project figcaption {
+  position: absolute;
+  bottom: 42%;
+  left: 25px;
+  text-align: left;
+  opacity: 0;
+  padding: 5px 60px 5px 10px;
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+figure.project a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+figure.project:hover img,
+figure.project.hover img {
+  zoom: 1;
+  filter: alpha(opacity=35);
+  -webkit-opacity: 0.35;
+  opacity: 0.35;
+}
+
+figure.project:hover .title:before,
+figure.project.hover .title:before,
+figure.project:hover .title:after,
+figure.project.hover .title:after,
+figure.project:hover .title div:before,
+figure.project.hover .title div:before,
+figure.project:hover .title div:after,
+figure.project.hover .title div:after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* <<<<<<< Modal >>>>>>> */
+.modal,
+.modal-box {
+  z-index: 900;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.modal-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.8);
+  overflow: auto;
+}
+
+.modal-box {
+  position: relative;
+  width: 80%;
+  max-width: 920px;
+  margin: 100px auto;
+  animation-name: modalbox;
+  animation-duration: .3s;
+  animation-timing-function: ease-out;
+}
+
+.modal-header {
+  padding-left: 40px;
+  padding-bottom: 5px;
+  background: rgb(90, 109, 117);
+  color: #ffffff;
+}
+
+.modal-body {
+  background: #ECEFF1;
+  color: #000;
+  font-size: 16px;
+  padding: 60px 40px;
+}
+
+/* Close Button */
+.close-modal {
+  text-align: right;
+  cursor: pointer;
+}
+
+/* Animation */
+@-webkit-keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+@keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+/* g. Contact Section
+   ================================================== */
+#contact {
+  background-color: white;
+  font-size: 42px;
+  color: black;
+  line-height: 0;
+  padding-bottom: 30px;
+}
+
+#contact h1 {
+  font: 32px 'Open Sans', sans-serif;
+  padding-bottom: 1em;
+}
+
+#contact h2 {
+  font: 16px 'Open Sans', sans-serif;
+}
